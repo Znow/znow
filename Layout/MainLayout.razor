@@ -1,17 +1,44 @@
 ﻿@inherits LayoutComponentBase
-<div class="page">
-    <div class="sidebar">
-        <NavMenu/>
-    </div>
-
-    <main>
-        <div class="top-row px-4 auth">
-            <LoginDisplay/>
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+<div id="wrap">
+    <div id="site-header"></div>
+    <div id="body">
+        <div id="side-bar">
+            <div class="box" id="navigation">
+                <div class="box-header"></div>
+                <div class="content">
+                    <NavMenu />
+                </div>
+            </div>
+            <div class="box" id="profile">
+                <div class="box-header"></div>
+                <div class="content">
+                    <ProfileMenu />
+                </div>
+            </div>
+            <div class="box" id="something">
+                <div class="box-header"></div>
+                <div class="content">
+                    <span>More content will come...</span>
+                </div>
+            </div>
+            <div class="box" id="shoutbox">
+                <div class="box-header"></div>
+                <div class="content">
+                    <Shoutbox />
+                </div>
+            </div>
         </div>
 
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
+        <div class="box" id="content">
+            <div class="box-header"></div>
+            <div class="content">
+                @Body
+                @*&nbsp;<p align="center">&nbsp;</p><p align="center">&nbsp;</p><p align="center">&nbsp;</p>*@
+            </div>
+        </div>
+    </div>
+    <div id="iesucks"></div>
+    <div id="footer">
+        <Footer />
+    </div>
 </div>
