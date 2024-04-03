@@ -10,9 +10,9 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 
 builder.Services.AddMsalAuthentication(options =>
 {
+    builder.Configuration.Bind("AzureAd", options.ProviderOptions.Authentication);
     options.ProviderOptions.DefaultAccessTokenScopes.Add("openid");
     options.ProviderOptions.DefaultAccessTokenScopes.Add("offline_access");
-    builder.Configuration.Bind("AzureAd", options.ProviderOptions.Authentication);
 });
 
 await builder.Build().RunAsync();
