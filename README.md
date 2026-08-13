@@ -10,7 +10,7 @@
 
 📫 How to reach me: LinkedIn
 
-⚡ Fun fact: Martial Arts & Snowboard instructor alongside MTB enthusiast
+⚡ Fun fact: Martial Arts & Warhammer enthusiast
 
 
 <!--
